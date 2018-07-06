@@ -1,4 +1,4 @@
-function stringUpdate(){
+function linkUpdate(){
   var links = document.getElementsByTagName('a');
   var check = new RegExp(/blog-entries/); //string to look for
   for(var i = 0; i < links.length; i++){
