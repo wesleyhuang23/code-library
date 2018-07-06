@@ -15,8 +15,10 @@ function validate(field, regex){
 
     if(regex.test(field.value)){
         field.className = 'valid';
-    } else {
+    } else if(field.value.length > 0) {
         field.className = 'invalid';
+    } else {
+        field.className = '';
     }
 
 }
